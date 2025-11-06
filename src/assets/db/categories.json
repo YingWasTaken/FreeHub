@@ -22,5 +22,11 @@
         "name": "APIs",
         "icon": "fa-solid fa-code",
         "description": "Public APIs for developers."
+    },
+    {
+        "id": 5,
+        "name": "Images",
+        "icon": "fa-solid fa-image",
+        "description": "Resources for images, including stock photos, illustrations, and image generators."
     }
 ]
