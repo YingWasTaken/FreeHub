@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Google Fonts",
         "description": "No, not all Google Fonts are open source and free of charge. Check the fonts you plan to use beforehand.",
-        "url": "hhttps://fonts.google.com/",
+        "url": "https://fonts.google.com/",
         "category": "fonts",
         "language": ["en", "es"],
         "tags": ["typography", "fonts"],
