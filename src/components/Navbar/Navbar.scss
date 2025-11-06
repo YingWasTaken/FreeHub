@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+    color: $color-text-light;
+    box-shadow: $shadow-soft;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .navbar-logo {
+        text-decoration: none;
+        color: $color-text-light;
+        font-family: $font-base;
+        font-size: 1.5rem;
+        font-weight: 700;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 1rem;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+    }
+}

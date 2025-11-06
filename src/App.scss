@@ -1,0 +1,26 @@
+@import "./styles/variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $color-bg;
+    font-family: "Poppins", sans-serif;
+    color: $color-text;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: $color-primary;
+    letter-spacing: 0.5px;
+}
+
+p {
+    line-height: 1.6;
+}

@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Coolors",
+        "description": "Coolors is a color scheme generator that lets you create, save, and share color palettes.",
+        "url": "https://coolors.co/fefffe-e5fcf5-b3dec1-210124-750d37",
+        "category": "colors",
+        "language": ["en"],
+        "tags": ["color", "palette", "theme"],
+        "img": "https://res.cloudinary.com/coolors/image/upload/v1575544084/zendesk/generator_screen.png",
+        "icon": "fa-solid fa-palette"
+    },
+    {
+        "id": 2,
+        "title": "Adobe Color",
+        "description": "Adobe Color is a powerful tool to create color palettes, extract themes, and generate gradients from images.",
+        "url": "https://color.adobe.com",
+        "category": "colors",
+        "language": ["en"],
+        "tags": ["color", "palette", "theme"],
+        "img": "https://www.adobe.com/la/products/media_1170b5c0e4166213cd695195cb06ddbcdd79f3306.png?width=750&format=png&optimize=medium",
+        "icon": "fa-solid fa-palette"
+    }
+]

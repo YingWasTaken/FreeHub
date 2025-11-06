@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Free Public APIs",
+        "description": "Over 450 free public APIs",
+        "url": "https://www.freepublicapis.com/",
+        "category": "apis",
+        "language": ["en"],
+        "tags": ["apis"],
+        "img": "/src/assets/thumbnails/apis/freepublicapis.png",
+        "icon": "fa-solid fa-code"
+    }
+]

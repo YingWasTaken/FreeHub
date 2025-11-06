@@ -1,0 +1,140 @@
+@import "../../styles/variables.scss";
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    color: $color-text;
+    overflow: hidden;
+
+    .hero {
+        max-width: 800px;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: $color-primary;
+
+            span {
+                color: $color-secondary;
+            }
+        }
+
+        p {
+            margin-top: 1rem;
+            color: darken($color-text, 10%);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.9rem 2rem;
+            background-color: $color-accent;
+            color: $color-primary;
+            border-radius: $border-radius;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: darken($color-accent, 8%);
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    /* Dynamic category showcase */
+    .category-showcase {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        min-height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        background-color: $color-surface;
+        border-radius: $border-radius;
+        box-shadow: $shadow-soft;
+        overflow: hidden;
+
+        .category-container {
+            opacity: 0;
+            transform: translateY(15px);
+            animation: fadeInUp 0.8s forwards;
+
+            .category-icon {
+                font-size: 2.5rem;
+                color: $color-secondary;
+            }
+
+            h2 {
+                margin-top: 0.5rem;
+                color: $color-primary;
+            }
+
+            p {
+                font-size: 0.95rem;
+                margin-top: 0.3rem;
+                color: darken($color-text, 5%);
+            }
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .about {
+        max-width: 800px;
+        margin-bottom: 3rem;
+
+        h3 {
+            color: $color-primary;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: darken($color-text, 10%);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+    }
+
+    .cta-footer {
+        margin-top: 1rem;
+
+        .cta.secondary {
+            background-color: $color-secondary;
+            color: $color-text-light;
+
+            &:hover {
+                background-color: darken($color-secondary, 8%);
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .category-showcase {
+            max-width: 90%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Font Awesome",
+        "description": "Customizable icon library for web and mobile.",
+        "url": "https://fontawesome.com",
+        "category": "icons",
+        "language": ["en"],
+        "tags": ["icons", "svg", "ui"],
+        "img": "/src/assets/thumbnails/icons/fontawesome.png",
+        "icon": "fa-solid fa-icons"
+    }
+]

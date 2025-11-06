@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Colors",
+        "icon": "fa-solid fa-palette",
+        "description": "Color tools, palettes, and generators."
+    },
+    {
+        "id": 2,
+        "name": "Fonts",
+        "icon": "fa-solid fa-font",
+        "description": "A collection of websites offering fonts, both free and paid. Not all are open-source or free to use—check the license before using."
+    },
+    {
+        "id": 3,
+        "name": "Icons",
+        "icon": "fa-solid fa-icons",
+        "description": "Icon libraries and packs for UI design."
+    },
+    {
+        "id": 4,
+        "name": "APIs",
+        "icon": "fa-solid fa-code",
+        "description": "Public APIs for developers."
+    }
+]
