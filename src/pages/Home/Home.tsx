@@ -1,11 +1,18 @@
 import "./Home.scss";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import categoriesJson from "../../assets/db/categories.json";
 
-import categories from "../../assets/db/categories.json";
+type Category = {
+    id: number;
+    name: string;
+    icon: string;
+    description: string;
+};
+
+const categories: Category[] = categoriesJson;
 
 export default function Home() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -14,7 +21,7 @@ export default function Home() {
         return () => clearInterval(interval);
     }, []);
 
-    const currentCategory = categories[currentIndex];
+    const currentCategory: Category = categories[currentIndex];
 
     return (
         <section className="home">
