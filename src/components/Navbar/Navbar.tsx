@@ -6,8 +6,15 @@ import { Link } from "react-router-dom";
 import categoriesData from "../../assets/db/categories.json";
 import NavButton from "../NavButton/NavButton";
 
+type Category = {
+    id: number;
+    name: string;
+    icon: string;
+    description: string;
+};
+
 export default function Navbar() {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState<Category[]>([]);
 
     useEffect(() => {
         setCategories(categoriesData);

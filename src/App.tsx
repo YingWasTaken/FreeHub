@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import Navbar from "./components/Navbar/Navbar";
 
-function App() {
+export default function App() {
     return (
         <Router /*basename="/meleedle"*/>
             <Navbar />
@@ -17,5 +17,3 @@ function App() {
         </Router>
     );
 }
-
-export default App;

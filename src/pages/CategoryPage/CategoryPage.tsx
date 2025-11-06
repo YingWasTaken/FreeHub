@@ -1,13 +1,32 @@
 import "./CategoryPage.scss";
-
 import { useParams } from "react-router-dom";
-import categories from "../../assets/db/categories.json";
 import { useEffect, useState } from "react";
+import categoriesJson from "../../assets/db/categories.json";
+
+type Category = {
+    id: number;
+    name: string;
+    icon: string;
+    description: string;
+};
+
+type Asset = {
+    id: number;
+    title: string;
+    description: string;
+    img: string;
+    url: string;
+    tags?: string[];
+};
+
+const categories: Category[] = categoriesJson;
 
 export default function CategoryPage() {
-    const { category } = useParams();
-    const [currentCategory, setCurrentCategory] = useState(null);
-    const [assets, setAssets] = useState([]);
+    const { category } = useParams<{ category: string }>();
+    const [currentCategory, setCurrentCategory] = useState<Category | null>(
+        null
+    );
+    const [assets, setAssets] = useState<Asset[]>([]);
 
     useEffect(() => {
         const found = categories.find(
@@ -16,7 +35,7 @@ export default function CategoryPage() {
         setCurrentCategory(found || null);
 
         import(`../../assets/db/assets-${category}.json`)
-            .then((module) => setAssets(module.default))
+            .then((module) => setAssets(module.default as Asset[]))
             .catch(() => setAssets([]));
     }, [category]);
 
