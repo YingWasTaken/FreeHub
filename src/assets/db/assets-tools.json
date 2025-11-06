@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Readme.so",
+        "description": "The easiest way to create README",
+        "url": "https://readme.so/en",
+        "category": "tools",
+        "language": ["en"],
+        "tags": ["tool", "readme"],
+        "img": "../thumbnails/tools/readmeso.png",
+        "icon": "fa-solid fa-screwdriver-wrench"
+    }
+]

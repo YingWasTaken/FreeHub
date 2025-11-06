@@ -9,5 +9,16 @@
         "tags": ["icons", "svg", "ui"],
         "img": "../thumbnails/icons/fontawesome.png",
         "icon": "fa-solid fa-icons"
+    },
+    {
+        "id": 2,
+        "title": "Boxicons",
+        "description": "Simply beautiful icons carefully crafted for designers & developers",
+        "url": "https://boxicons.com/",
+        "category": "icons",
+        "language": ["en"],
+        "tags": ["icons", "svg", "ui"],
+        "img": "../thumbnails/icons/boxicons.png",
+        "icon": "fa-solid fa-icons"
     }
 ]

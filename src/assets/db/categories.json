@@ -28,5 +28,11 @@
         "name": "Images",
         "icon": "fa-solid fa-image",
         "description": "Resources for images, including stock photos, illustrations, and image generators."
+    },
+    {
+        "id": 6,
+        "name": "Tools",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "description": "Various tools for design and development."
     }
 ]
