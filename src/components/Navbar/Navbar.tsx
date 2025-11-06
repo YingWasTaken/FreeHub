@@ -1,26 +1,27 @@
 import "./Navbar.scss";
+import type { ReactElement } from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import categoriesData from "../../assets/db/categories.json";
 import NavButton from "../NavButton/NavButton";
 
-type Category = {
+interface Category {
     id: number;
     name: string;
     icon: string;
     description: string;
-};
+}
 
-export default function Navbar() {
+export default function Navbar(): ReactElement {
     const [categories, setCategories] = useState<Category[]>([]);
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     useEffect(() => {
-        setCategories(categoriesData);
+        setCategories(categoriesData as Category[]);
     }, []);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+    const toggleMenu = (): void => {
+        setMenuOpen((prev) => !prev);
     };
 
     return (
@@ -29,17 +30,17 @@ export default function Navbar() {
                 FreeHub
             </Link>
 
-            {/* Botón de hamburguesa */}
             <div
                 className={`navbar-hamburger ${menuOpen ? "open" : ""}`}
                 onClick={toggleMenu}
+                role="button"
+                aria-label="Toggle menu"
             >
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            {/* Links de navegación */}
             <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
                 {categories.map((cat) => (
                     <NavButton
@@ -47,7 +48,6 @@ export default function Navbar() {
                         name={cat.name}
                         icon={cat.icon}
                         path={`/${cat.name.toLowerCase().replace(/\s+/g, "-")}`}
-                        onClick={() => setMenuOpen(false)} // cerrar menú al hacer click
                     />
                 ))}
             </div>
