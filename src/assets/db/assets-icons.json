@@ -7,7 +7,7 @@
         "category": "icons",
         "language": ["en"],
         "tags": ["icons", "svg", "ui"],
-        "img": "/src/assets/thumbnails/icons/fontawesome.png",
+        "img": "../thumbnails/icons/fontawesome.png",
         "icon": "fa-solid fa-icons"
     }
 ]

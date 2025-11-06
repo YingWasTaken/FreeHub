@@ -7,7 +7,7 @@
         "category": "fonts",
         "language": ["en", "es"],
         "tags": ["typography", "fonts"],
-        "img": "/src/assets/thumbnails/fonts/googlefonts.png",
+        "img": "../thumbnails/fonts/googlefonts.png",
         "icon": "fa-solid fa-palette"
     }
 ]
