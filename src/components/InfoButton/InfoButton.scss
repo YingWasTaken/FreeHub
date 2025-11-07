@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+
+.info-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-secondary;
+    color: $color-text-light;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: $shadow-soft;
+    transition: all 0.3s ease;
+    z-index: 1000;
+
+    &:hover {
+        background-color: lighten($color-secondary, 10%);
+        transform: scale(1.05);
+    }
+}
+
+.info-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .info-content {
+        background-color: $color-surface;
+        color: $color-text;
+        max-width: 500px;
+        width: 90%;
+        padding: 2rem;
+        border-radius: $border-radius;
+        box-shadow: $shadow-medium;
+        text-align: left;
+        position: relative;
+        animation: fadeIn 0.3s ease;
+
+        h2 {
+            color: $color-primary;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: darken($color-text, 5%);
+        }
+
+        .discord-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: $color-secondary;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+
+            &:hover {
+                color: lighten($color-secondary, 10%);
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 2rem;
+            margin-top: 1.5rem;
+            background: transparent;
+            border: 1px solid $color-secondary;
+            color: $color-secondary;
+            padding: 0.4rem 1rem;
+            border-radius: $border-radius;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-text-light;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
