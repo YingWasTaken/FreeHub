@@ -9,5 +9,16 @@
         "tags": ["images", "png"],
         "img": "../thumbnails/images/pngegg.png",
         "icon": "fa-solid fa-image"
+    },
+    {
+        "id": 2,
+        "title": "Unsplash",
+        "description": "Photos and Pictures. Freemium",
+        "url": "https://www.pngegg.com/es",
+        "category": "images",
+        "language": ["en"],
+        "tags": ["images", "png"],
+        "img": "https://wptavern.com/wp-content/uploads/2020/06/unsplash-logo.jpg?w=640",
+        "icon": "fa-solid fa-image"
     }
 ]

@@ -20,5 +20,16 @@
         "tags": ["color", "palette", "theme"],
         "img": "https://www.adobe.com/la/products/media_1170b5c0e4166213cd695195cb06ddbcdd79f3306.png?width=750&format=png&optimize=medium",
         "icon": "fa-solid fa-palette"
+    },
+    {
+        "id": 3,
+        "title": "Random Colour",
+        "description": "Every time you enter this page you get a random color.",
+        "url": "https://randomcolour.com/",
+        "category": "colors",
+        "language": ["en"],
+        "tags": ["color"],
+        "img": "https://i.ytimg.com/vi/wRIvrcRouhc/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGD0gEyh_MA8=&rs=AOn4CLA5LbtdkyTD_bdTy4G59JhIbizsTg",
+        "icon": "fa-solid fa-palette"
     }
 ]
