@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Awesome Stock Resources",
+        "url": "https://github.com/neutraltone/awesome-stock-resources",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Design Resources for Developers",
+        "url": "https://github.com/bradtraversy/design-resources-for-developers",
+        "license": "MIT"
+    },
+    {
+        "name": "Awesome Design Tools",
+        "url": "https://github.com/goabstract/Awesome-Design-Tools",
+        "license": "MIT"
+    },
+    {
+        "name": "Awesome CC0",
+        "url": "https://github.com/madjin/awesome-cc0",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Magic Tools",
+        "url": "https://github.com/ellisonleao/magictools",
+        "license": "MIT"
+    },
+    {
+        "name": "Awesome Generative AI",
+        "url": "https://github.com/steven2358/awesome-generative-ai",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Awesome Blender",
+        "url": "https://github.com/agmmnn/awesome-blender",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Awesome Music Production",
+        "url": "https://github.com/ad-si/awesome-music-production",
+        "license": "ISC"
+    },
+    {
+        "name": "Awesome Video",
+        "url": "https://github.com/krzemienski/awesome-video",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Awesome Pixel Art",
+        "url": "https://github.com/Siilwyn/awesome-pixel-art",
+        "license": "CC0-1.0"
+    },
+    {
+        "name": "Awesome Public Datasets",
+        "url": "https://github.com/awesomedata/awesome-public-datasets",
+        "license": "MIT"
+    },
+    {
+        "name": "Public APIs",
+        "url": "https://github.com/public-apis/public-apis",
+        "license": "MIT"
+    },
+    {
+        "name": "Fontsource",
+        "url": "https://fontsource.org/",
+        "license": "per font"
+    },
+    {
+        "name": "Iconify",
+        "url": "https://iconify.design/",
+        "license": "per icon set"
+    }
+]

@@ -1,57 +1,66 @@
 import "./Home.scss";
-import { useEffect, useState } from "react";
-import categoriesJson from "../../assets/db/categories.json";
-
-type Category = {
-    id: number;
-    name: string;
-    icon: string;
-    description: string;
-};
-
-const categories: Category[] = categoriesJson;
+import type { FormEvent } from "react";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import {
+    categories,
+    categorySlug,
+    formatCount,
+    totalResources,
+} from "../../lib/catalog";
 
 export default function Home() {
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
+    const [query, setQuery] = useState<string>("");
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % categories.length);
-        }, 2500);
-        return () => clearInterval(interval);
-    }, []);
-
-    const currentCategory: Category = categories[currentIndex];
+    const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
+        event.preventDefault();
+        navigate(`/search?q=${encodeURIComponent(query.trim())}`);
+    };
 
     return (
         <section className="home">
             <div className="hero">
-                <h1>
-                    Discover all the <span>free resources</span> in one place.
+                <h1 className="page-title">
+                    Free resources for developers.
                 </h1>
                 <p>
-                    FreeHub brings together assets, tools, and open-source
-                    resources for designers and developers.
+                    {formatCount(totalResources)} assets, tools, and APIs you can
+                    use for free, all in one place.
                 </p>
+                <form onSubmit={handleSubmit} role="search">
+                    <input
+                        className="field"
+                        type="search"
+                        value={query}
+                        onChange={(event) => setQuery(event.target.value)}
+                        placeholder="Search fonts, icons, APIs..."
+                        aria-label="Search all resources"
+                    />
+                    <button type="submit">Search</button>
+                </form>
             </div>
 
-            <div className="category-showcase">
-                <div className="category-container fade">
-                    <i className={`${currentCategory.icon} category-icon`}></i>
-                    <h2>{currentCategory.name}</h2>
-                    <p>{currentCategory.description}</p>
-                </div>
-            </div>
+            <ul className="category-index">
+                {categories.map((category) => (
+                    <li key={category.id}>
+                        <Link to={`/${categorySlug(category.name)}`}>
+                            <h2>{category.name}</h2>
+                            <strong>{formatCount(category.count)}</strong>
+                            <p>{category.description}</p>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
 
-            <div className="about">
-                <h3>Your free creative hub</h3>
-                <p>
-                    FreeHub gathers websites, tools, and free libraries to speed
-                    up your creative workflow. From icons and fonts to textures,
-                    sounds, and 3D models — everything organized, accessible,
-                    and constantly growing.
-                </p>
-            </div>
+            <a
+                className="home-licenses"
+                href={`${import.meta.env.BASE_URL}third-party-notices.txt`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Licenses
+            </a>
         </section>
     );
 }

@@ -3,36 +3,105 @@
         "id": 1,
         "name": "Colors",
         "icon": "fa-solid fa-palette",
-        "description": "Color tools, palettes, and generators."
+        "description": "Palettes, gradients, and color tools.",
+        "count": 111
     },
     {
         "id": 2,
         "name": "Fonts",
         "icon": "fa-solid fa-font",
-        "description": "A collection of websites offering fonts, both free and paid. Not all are open-source or free to use—check the license before using."
+        "description": "Open fonts and font tools.",
+        "count": 2149
     },
     {
         "id": 3,
         "name": "Icons",
         "icon": "fa-solid fa-icons",
-        "description": "Icon libraries and packs for UI design."
+        "description": "Icon sets, logos, and favicon tools.",
+        "count": 297
     },
     {
         "id": 4,
-        "name": "APIs",
-        "icon": "fa-solid fa-code",
-        "description": "Public APIs for developers."
+        "name": "Images",
+        "icon": "fa-solid fa-image",
+        "description": "Stock photos, patterns, mockups, and archives.",
+        "count": 107
     },
     {
         "id": 5,
-        "name": "Images",
-        "icon": "fa-solid fa-image",
-        "description": "Resources for images, including stock photos, illustrations, and image generators."
+        "name": "Illustrations",
+        "icon": "fa-solid fa-pen-nib",
+        "description": "Illustrations, vectors, and clip art.",
+        "count": 43
     },
     {
         "id": 6,
+        "name": "Video",
+        "icon": "fa-solid fa-film",
+        "description": "Stock footage and video tools.",
+        "count": 1967
+    },
+    {
+        "id": 7,
+        "name": "Audio",
+        "icon": "fa-solid fa-music",
+        "description": "Music, sound effects, and audio tools.",
+        "count": 222
+    },
+    {
+        "id": 8,
+        "name": "3D",
+        "icon": "fa-solid fa-cube",
+        "description": "3D models, textures, HDRIs, and software.",
+        "count": 222
+    },
+    {
+        "id": 9,
+        "name": "UI Kits",
+        "icon": "fa-solid fa-table-columns",
+        "description": "Components, CSS frameworks, and templates.",
+        "count": 428
+    },
+    {
+        "id": 10,
+        "name": "Inspiration",
+        "icon": "fa-solid fa-lightbulb",
+        "description": "Galleries and design systems to learn from.",
+        "count": 92
+    },
+    {
+        "id": 11,
+        "name": "APIs",
+        "icon": "fa-solid fa-code",
+        "description": "Public APIs for developers.",
+        "count": 2002
+    },
+    {
+        "id": 12,
         "name": "Tools",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "description": "Various tools for design and development."
+        "description": "Tools for design and development.",
+        "count": 340
+    },
+    {
+        "id": 13,
+        "name": "Datasets",
+        "icon": "fa-solid fa-database",
+        "description": "Open datasets for research, projects, and practice.",
+        "count": 1020
+    },
+    {
+        "id": 14,
+        "name": "AI",
+        "icon": "fa-solid fa-robot",
+        "description": "Open models and free AI tools.",
+        "count": 48
+    },
+    {
+        "id": 15,
+        "name": "Game Dev",
+        "icon": "fa-solid fa-gamepad",
+        "description": "Engines, assets, and tools for making games.",
+        "count": 307
     }
 ]

@@ -1,110 +1,58 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables" as *;
 
-.info-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: $color-secondary;
-    color: $color-text-light;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: $shadow-soft;
-    transition: all 0.3s ease;
-    z-index: 1000;
+.info-dialog {
+    width: min(480px, calc(100vw - 2rem));
+    margin: auto;
+    padding: 2rem;
+    color: $color-text;
+    border: 0;
+    border-radius: $border-radius;
 
-    &:hover {
-        background-color: lighten($color-secondary, 10%);
-        transform: scale(1.05);
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.6);
     }
-}
 
-.info-modal {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: $color-primary;
+    }
 
-    .info-content {
-        background-color: $color-surface;
-        color: $color-text;
-        max-width: 500px;
-        width: 90%;
-        padding: 2rem;
+    p {
+        font-size: 1.05rem;
+    }
+
+    .discord-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+        margin-top: 1.5rem;
+        padding: 1.1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-text-light;
+        text-decoration: none;
+        background: $color-primary;
         border-radius: $border-radius;
-        box-shadow: $shadow-medium;
-        text-align: left;
-        position: relative;
-        animation: fadeIn 0.3s ease;
 
-        h2 {
-            color: $color-primary;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            font-size: 1.4rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            color: darken($color-text, 5%);
-        }
-
-        .discord-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: $color-secondary;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 0.5rem;
-            font-size: 1rem;
-
-            &:hover {
-                color: lighten($color-secondary, 10%);
-            }
-        }
-
-        .close-btn {
-            position: absolute;
-            bottom: 1.5rem;
-            right: 2rem;
-            margin-top: 1.5rem;
-            background: transparent;
-            border: 1px solid $color-secondary;
-            color: $color-secondary;
-            padding: 0.4rem 1rem;
-            border-radius: $border-radius;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-
-            &:hover {
-                background-color: $color-secondary;
-                color: $color-text-light;
-            }
+        i {
+            font-size: 1.5rem;
         }
     }
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
+    .close-button {
+        display: block;
+        margin: 1rem auto 0;
+        padding: 0.3rem 0.8rem;
+        font: inherit;
+        font-size: 0.9rem;
+        color: $color-text-muted;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
 }

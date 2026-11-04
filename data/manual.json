@@ -1,0 +1,68 @@
+[
+    { "title": "Coolors", "url": "https://coolors.co/", "category": "colors", "section": "Palettes", "description": "Color scheme generator to create, save, and share palettes." },
+    { "title": "Adobe Color", "url": "https://color.adobe.com", "category": "colors", "section": "Palettes", "description": "Create palettes, extract themes, and generate gradients from images." },
+    { "title": "Random Colour", "url": "https://randomcolour.com/", "category": "colors", "section": "Tools", "description": "Every time you enter this page you get a random color." },
+    { "title": "Tailwind Colors", "url": "https://tailwindcss.com/docs/colors", "category": "colors", "section": "Palettes", "description": "The default Tailwind palette, ready to copy." },
+    { "title": "Contrast Checker", "url": "https://webaim.org/resources/contrastchecker/", "category": "colors", "section": "Tools", "description": "Check text and background colors against WCAG contrast rules." },
+
+    { "title": "Google Fonts", "url": "https://fonts.google.com/", "category": "fonts", "section": "Font libraries", "description": "Huge library of open source web fonts." },
+    { "title": "Fontsource", "url": "https://fontsource.org/", "category": "fonts", "section": "Font libraries", "description": "Self-host open source fonts through npm packages." },
+    { "title": "Font Squirrel", "url": "https://www.fontsquirrel.com/", "category": "fonts", "section": "Font libraries", "description": "Hand-picked fonts licensed for commercial work." },
+    { "title": "Fontshare", "url": "https://www.fontshare.com/", "category": "fonts", "section": "Font libraries", "description": "Quality fonts from Indian Type Foundry, free for personal and commercial use." },
+    { "title": "Velvetyne", "url": "https://velvetyne.fr/", "category": "fonts", "section": "Font libraries", "description": "Open source type foundry with experimental display fonts." },
+
+    { "title": "Font Awesome", "url": "https://fontawesome.com", "category": "icons", "section": "Icon sets", "description": "Customizable icon library for web and mobile." },
+    { "title": "Boxicons", "url": "https://boxicons.com/", "category": "icons", "section": "Icon sets", "description": "Simple icons crafted for designers and developers." },
+    { "title": "Lucide", "url": "https://lucide.dev/", "category": "icons", "section": "Icon sets", "description": "Open source icon set with packages for most frameworks." },
+    { "title": "Phosphor Icons", "url": "https://phosphoricons.com/", "category": "icons", "section": "Icon sets", "description": "Flexible icon family with six weights." },
+    { "title": "Tabler Icons", "url": "https://tabler.io/icons", "category": "icons", "section": "Icon sets", "description": "Thousands of free MIT-licensed SVG icons." },
+    { "title": "Iconify", "url": "https://iconify.design/", "category": "icons", "section": "Icon sets", "description": "One interface for more than 200 open icon sets." },
+
+    { "title": "Pngegg", "url": "https://www.pngegg.com/", "category": "images", "section": "Transparent PNG", "description": "Search engine for PNG images with transparent backgrounds." },
+    { "title": "Unsplash", "url": "https://unsplash.com/", "category": "images", "section": "Stock photos", "description": "Free photos and pictures." },
+    { "title": "Pexels", "url": "https://www.pexels.com/", "category": "images", "section": "Stock photos", "description": "Free stock photos and videos shared by creators." },
+    { "title": "Pixabay", "url": "https://pixabay.com/", "category": "images", "section": "Stock photos", "description": "Photos, illustrations, vectors, video, and music." },
+    { "title": "Openverse", "url": "https://openverse.org/", "category": "images", "section": "Search engines", "description": "Search over 800 million openly licensed images and audio tracks." },
+    { "title": "Wikimedia Commons", "url": "https://commons.wikimedia.org/", "category": "images", "section": "Archives", "description": "Over 100 million freely usable media files." },
+
+    { "title": "unDraw", "url": "https://undraw.co/", "category": "illustrations", "section": "Illustration packs", "description": "Open source illustrations with a color you pick." },
+    { "title": "Open Peeps", "url": "https://www.openpeeps.com/", "category": "illustrations", "section": "Illustration packs", "description": "Hand-drawn people you can mix and match. CC0." },
+    { "title": "Humaaans", "url": "https://www.humaaans.com/", "category": "illustrations", "section": "Illustration packs", "description": "Mix-and-match illustrations of people." },
+    { "title": "OpenClipart", "url": "https://openclipart.org/", "category": "illustrations", "section": "Vectors", "description": "Public domain clip art." },
+
+    { "title": "Mixkit", "url": "https://mixkit.co/", "category": "video", "section": "Stock video", "description": "Free video clips, music, sound effects, and templates." },
+    { "title": "Coverr", "url": "https://coverr.co/", "category": "video", "section": "Stock video", "description": "Free stock video footage." },
+    { "title": "Pexels Videos", "url": "https://www.pexels.com/videos/", "category": "video", "section": "Stock video", "description": "Free stock video shared by creators." },
+    { "title": "Kdenlive", "url": "https://kdenlive.org/", "category": "video", "section": "Editors", "description": "Open source video editor." },
+
+    { "title": "Freesound CC0", "url": "https://freesound.org/search/?f=license:%22Creative+Commons+0%22", "category": "audio", "section": "Sound effects", "description": "Collaborative sound database, filtered to CC0 sounds." },
+    { "title": "Pixabay Music", "url": "https://pixabay.com/music/", "category": "audio", "section": "Music", "description": "Royalty-free music tracks." },
+    { "title": "Audacity", "url": "https://www.audacityteam.org/", "category": "audio", "section": "Editors", "description": "Open source audio editor." },
+
+    { "title": "Poly Haven", "url": "https://polyhaven.com/", "category": "3d", "section": "Textures & HDRIs", "description": "CC0 textures, HDRIs, and 3D models." },
+    { "title": "ambientCG", "url": "https://ambientcg.com/", "category": "3d", "section": "Textures & HDRIs", "description": "CC0 PBR materials, HDRIs, and 3D models." },
+    { "title": "Blender", "url": "https://www.blender.org/", "category": "3d", "section": "Software", "description": "Open source 3D creation suite." },
+
+    { "title": "shadcn/ui", "url": "https://ui.shadcn.com/", "category": "ui-kits", "section": "Components", "description": "Accessible React components you copy into your project." },
+    { "title": "Bootstrap", "url": "https://getbootstrap.com/", "category": "ui-kits", "section": "CSS frameworks", "description": "Popular open source front-end toolkit." },
+    { "title": "Tailwind CSS", "url": "https://tailwindcss.com/", "category": "ui-kits", "section": "CSS frameworks", "description": "Utility-first CSS framework." },
+
+    { "title": "Dribbble", "url": "https://dribbble.com/", "category": "inspiration", "section": "Galleries", "description": "Work from designers around the world." },
+    { "title": "Behance", "url": "https://www.behance.net/", "category": "inspiration", "section": "Galleries", "description": "Portfolios and creative projects." },
+
+    { "title": "Free Public APIs", "url": "https://www.freepublicapis.com/", "category": "apis", "section": "Directories", "description": "Directory of over 450 free public APIs." },
+
+    { "title": "Readme.so", "url": "https://readme.so/en", "category": "tools", "section": "Developer tools", "description": "The easiest way to create a README." },
+    { "title": "Squoosh", "url": "https://squoosh.app/", "category": "tools", "section": "Image tools", "description": "Compress and compare images in the browser." },
+    { "title": "Excalidraw", "url": "https://excalidraw.com/", "category": "tools", "section": "Design tools", "description": "Open source whiteboard with a hand-drawn look." },
+    { "title": "Photopea", "url": "https://www.photopea.com/", "category": "tools", "section": "Design tools", "description": "Photo editor that runs in the browser and opens PSD files." },
+    { "title": "CyberChef", "url": "https://gchq.github.io/CyberChef/", "category": "tools", "section": "Developer tools", "description": "Encode, decode, hash, and analyze data in the browser." },
+
+    { "title": "Hugging Face", "url": "https://huggingface.co/", "category": "ai", "section": "Models", "description": "Open models, datasets, and demos." },
+    { "title": "Ollama", "url": "https://ollama.com/", "category": "ai", "section": "Local models", "description": "Run open language models on your own computer." },
+
+    { "title": "Kenney", "url": "https://kenney.nl/assets", "category": "game-dev", "section": "Assets", "description": "Thousands of CC0 game assets." },
+    { "title": "OpenGameArt", "url": "https://opengameart.org/", "category": "game-dev", "section": "Assets", "description": "Free art, music, and sound for games." },
+    { "title": "itch.io Free Assets", "url": "https://itch.io/game-assets/free", "category": "game-dev", "section": "Assets", "description": "Free game assets from independent creators." },
+    { "title": "Godot", "url": "https://godotengine.org/", "category": "game-dev", "section": "Engines and Frameworks", "description": "Open source 2D and 3D game engine." }
+]
